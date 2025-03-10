@@ -1,0 +1,110 @@
+/* App.css */
+
+/* General styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container styles */
+.container {
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+/* Task list styles */
+.task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-list li:last-child {
+    border-bottom: none;
+}
+
+.task-list .task-title {
+    font-weight: bold;
+}
+
+.task-list .task-actions {
+    margin-top: 10px;
+}
+
+.task-list .task-actions button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.task-list .task-actions .edit-button {
+    background-color: #ffc107;
+    color: #fff;
+}
+
+.task-list .task-actions .edit-button:hover {
+    background-color: #e0a800;
+}
+
+.task-list .task-actions .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.task-list .task-actions .delete-button:hover {
+    background-color: #c82333;
+}

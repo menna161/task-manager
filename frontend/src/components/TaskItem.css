@@ -1,0 +1,39 @@
+/* TaskItem.css */
+
+.task-item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task-row {
+    display: contents;
+}
+
+.task-cell {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+}
+
+.task-title {
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .task-item {
+        grid-template-columns: 1fr;
+    }
+
+    .task-cell {
+        border: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .task-cell:last-child {
+        border-bottom: none;
+    }
+}
